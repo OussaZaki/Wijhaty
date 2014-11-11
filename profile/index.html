@@ -1,0 +1,620 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+               More info: h5bp.com/b/378 -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- page title -->
+        <title>Zaki Oussama - Wijhaty</title>
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <meta name="author" content="humans.txt">
+        <link rel="shortcut icon" href="preview/logo.png">
+        <!-- Facebook Metadata /-->
+        <meta property="fb:page_id" content=""/>
+        <meta property="og:image" content=""/>
+        <meta property="og:description" content=""/>
+        <meta property="og:title" content=""/>
+        <!-- Google+ Metadata /-->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="css/import.css">
+        <link rel="stylesheet" href="css/shutter.css">
+        <!-- modernizr built -->
+        <script src="js/libs/modernizr-2.6.2.min.js"></script>
+        <!-- WHEN READY TO BE ONLINE MAKE SURE TO CHANGE NOINDEX AND NOFOLLOW TO INDEX AND FOLLOW -->
+        <meta name="robots" content="noindex, nofollow">
+        <!-- open-sans font opens from gumby.css file -->
+        <!-- serif font -->
+        <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400italic' rel='stylesheet' type='text/css'>
+        <!-- parallax images -->
+        <style>
+
+            .slideshow{
+                background:url(../montreal.aliengfx.com/img/stripesblack.png);
+            }
+            .image-1{
+                background-image:url(preview/ilug1.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+            }
+            .image-2{
+                background-image:url(preview/ilug2.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+            }
+            .image-3{
+                background-image:url(http://static.awwwards.com/awards/images/2013/08/photo-big-resolution-for-free-3.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+            }
+            .image-4{
+                background-image:url(preview/ilug4.jpg);
+                background-size:cover;
+                background-attachment:fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">
+                &nbsp;
+            </div>
+        </div>
+        <!-- begin main container -->
+        <div class="container main">
+            <!-- begin home/slideshow section -->
+            <section id="home" class="slideshow">
+                <!-- begin header and navigation -->
+                <header class="navbar" id="navbar">
+                    <div class="row">
+                        <a class="toggle" gumby-trigger="#navbar &gt; .row &gt; ul" href="#"><i class="icon-reorder"></i></a>
+                        <!-- change image source to your logo file 190px by 65px -->
+                        <h1 class="four columns logo">
+                            <a href="default.htm">
+                                <img src="img/logo2.png" alt="logo">
+                            </a>
+                        </h1>
+                        <!-- navigation -->
+                        <!-- we use href attribute for li active class to work on different sections.
+                           we use gumby-goto for easing scroll to target sections -->
+                        <ul class="eight columns" id="top-nav">
+                            <li class="active"><a href="#home" class="skip" gumby-goto="#home" gumby-duration="800">Acceuil</a></li>
+                            <li><a href="#work" class="skip" gumby-goto="#work" gumby-duration="800" gumby-offset="-70">Nouveaut&eacute;s</a></li>
+                            <li><a href="#about" class="skip" gumby-goto="#about" gumby-duration="800" gumby-offset="-70">Mon m&eacute;tier</a></li>
+                            <li><a href="#services" class="skip" gumby-goto="#services" gumby-duration="800" gumby-offset="-70">Changer de carri&egrave;re</a></li>
+                        </ul>
+                    </div>
+                </header>
+                <!-- Slideshow Navigation -->
+                <div class="slider-nav">
+                    <section class="row">
+                        <ul id="slide-list">
+                        </ul>
+                    </section>
+                </div>
+                <div class="slider-base">
+                    <section class="row">
+                        <!-- Slideshow captions -->
+                        <div class="eight columns">
+                            <div id="slidecaption">
+                            </div>
+                        </div>
+                        <!-- Down link -->
+                        <div class="four columns right-text">
+                            <div class="arrow-link">
+                                <a href="#" class="skip" gumby-goto="#work" gumby-duration="400" gumby-offset="-70"><i class="icon-chevron-down"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <!-- end slideshow section -->
+            <!-- begin work section -->
+            <section id="work">
+                <div class="white">
+                    <!-- section heading -->
+                    <section class="row heading">
+                        <h2><span>D&Egrave;RNIERS ARTICLES</span><br /> PUBLI&Eacute;S</h2>
+                        <h5>Technologie de l'information, Web, &eacute;v&egrave;nements, business...</h5>
+                    </section>
+                    <!-- portfolio filters -->
+                    <!-- replace data filters for your project categories
+            *remember to add your filters as classes to your projects for filters to work -->
+                    <section id="options" class="row midbottompadding">
+                        <ul id="filters" class="option-set">
+                            <li><a href="#" data-filter="*" class="selected">Afficher tout</a></li>
+                            <li><a href="#" data-filter=".motion">Infrastructure</a></li>
+                            <li><a href="#" data-filter=".web-design">&eacute;v&egrave;nements</a></li>
+                            <li><a href="#" data-filter=".photography">Business</a></li>
+                        </ul>
+                    </section>
+                    <!-- project details container 
+             YOU DO NOT NEED TO EDIT ANYTHING HERE 
+                    -->
+                    <div id="ajax-section">
+                        <div class="clearfix">
+                            <!-- PROJECT NAVIGATION AND CLOSE BUTTON -->
+                            <section class="row">
+                                <div id="ajax-nav">
+                                    <ul>
+                                        <li id="prevProject"><a href="#"><i class="icon-chevron-left"></i></a></li>
+                                        <li id="nextProject"><a href="#"><i class="icon-chevron-right"></i></a></li>
+                                        <li id="closeProject"><a href="#work"><i class="icon-remove"></i></a></li>
+                                    </ul>
+                                </div>
+                                <!-- END PROJECT NAVIGATION AND CLOSE BUTTON -->
+                            </section>
+                            <div id="loader">
+                            </div>
+                            <!-- PROJECT WILL LOSE INSIDE 'AJAX-INSIDE' -->
+                            <div id="ajax-outside">
+                                <div id="ajax-inside">
+                                </div>
+                            </div>
+                            <!-- END AJAX CONTENT -->
+                        </div>
+                        <!-- END AJAX SECTION -->
+                        <div class="clear">
+                        </div>
+                    </div>
+                    <!-- BEGIN PORTFOLIO ROW-->
+                    <section class="row midtoppadding">
+                        <!-- we use class=grid and id=project for our project listing -->
+                        <ul class="grid" id="projects">
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item web-design">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="http://www.it.ma/mobile/samsung-lance-le-nouveau-galaxy-s5-au-maroc/" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p1.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h5>Samsung S5 au Maroc</h5>
+                                            <h6>&Eacute;v&egrave;nements</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item motion">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-2.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p2.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h5>Greensystems Maroc...</h5>
+                                            <h6>Infrastructure</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item photography">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-3.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p3.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h5>Samsung apporte son aide aux...</h5>
+                                            <h6>Business</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item photography">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-1.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p4.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h5>Strat&eacute;gie Maroc Numeric 2013</h5>
+                                            <h6>Business</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item web-design">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-2.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p5.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h5>M&eacute;ditel apps Challenge</h5>
+                                            <h6>&Eacute;v&egrave;nements</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item photography">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-3.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p6.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h1>PROJECT TITLE <span>06</span></h1>
+                                            <h6>Photography</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item web-design">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-1.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p7.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h1>PROJECT TITLE <span>07</span></h1>
+                                            <h6>Design &amp; Development</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item motion">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-2.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p8.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h1>PROJECT TITLE <span>08</span></h1>
+                                            <h6>Motion &amp; Video</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                            <!-- project 
+             remember to add your data-filter as class 
+                            -->
+                            <li class="grid-item photography">
+                                <div class="grid-project">
+                                    <!-- ajax link -->
+                                    <a href="#!projects/project-3.html" class="open-slide">
+                                        <!-- project image -->
+                                        <div class="img-box">
+                                            <img src="preview/p9.jpg" alt="project">
+                                        </div>
+                                        <!-- project title and category -->
+                                        <div class="project-info">
+                                            <h1>PROJECT TITLE <span>09</span></h1>
+                                            <h6>Photography</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- end portfolio listings -->
+                    </section>
+                    <!-- END PORTFOLIO SECTION -->
+                </div>
+            </section>
+            <!-- end #work section -->
+            <!-- begin #about section -->
+            <section id="about">
+                <!-- begin parallax image background 1 -->
+                <div class="image-1" data-stellar-background-ratio="0.5">
+                    <!-- YOUR CAN CHANGE THE TINT COLOR JUST LIKE SOLID COLORS -->
+                    <div class="black-tint">
+                        <!-- HEADLINE STATEMENT -->
+                        <section class="row center">
+                            <h1 class="large">MES POINTS FORTS</h1>
+                            <h4 class="light serif">Un informaticien est caractérisé par...</h4>
+                        </section>
+                        <!-- begin icon row -->
+                        <section class="row bigtoppadding">
+                            <div class="four columns center">
+                                <!-- main icon -->
+                                <div class="main-icon">
+                                    <i class="icon-unlock"></i>
+                                </div>
+                                <h5>Ouverture d'esprit</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus sem.
+                                </p>
+                            </div>
+                            <div class="four columns center">
+                                <!-- main icon -->
+                                <div class="main-icon">
+                                    <i class="icon-eye-open"></i>
+                                </div>
+                                <h5>Analyse</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus sem.
+                                </p>
+                            </div>
+                            <div class="four columns center">
+                                <!-- main icon -->
+                                <div class="main-icon">
+                                    <i class="icon-coffee"></i>
+                                </div>
+                                <h5>Cr&eacute;ativit&eacute;</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus sem.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- end icon row -->
+                    </div>
+                </div>
+                <!-- end parallax image section 1 -->
+                <!-- Agency info section -->
+                <div class="white">
+                    <!-- section heading -->
+                    <section class="row heading">
+                        <h1><span>MON</span> M&Eacute;TIER</h1>
+                        <h5 class="grey-text">
+                            Conception, d&eacute;veloppement et r&eacute;alisation technique et applicative des solutions IT.</h5>
+                    </section>
+                    <!-- section content -->
+                    <section class="row bigtoppadding">
+                        <!-- story -->
+                        <div class="six columns">
+                            <h5 class="bold">Ingénieur g&eacute;nie informaique</h5>
+                            <p>
+                                Travaillant dans une SSII, chez un &eacute;diteur de logiciel ou dans une entreprise utilisatrice, un d&eacute;veloppeur appel&eacute; aussi analyste-programmeur participe, sous la direction d'un chef de projet, &agrave; la r&eacute;alisation d'applications informatiques. Il peut être d&eacute;veloppeur Internet ou d&eacute;veloppeur logiciel, mais peu importe sa sp&eacute;cialisation, sa mission principale est la programmation, c'est-&agrave;-dire la production de lignes de code. Il participe aussi &agrave; toutes les &eacute;tapes de d&eacute;veloppement d'un projet informatique ou multim&eacute;dia, depuis l'&eacute;tude de faisabilit&eacute; jusqu'&agrave; la phase d'essai.. <br>
+                                <br>
+                                Concernant l'&eacute;volution professionnelle, habituellement, un informaticien d&eacute;butant commencera sa carri&egrave;re comme d&eacute;veloppeur et pourra ensuite se diriger vers un poste de chef de projet.
+                            </p>
+                        </div>
+                        <!-- skills -->
+                        <div class="five columns push_one">
+                            <h5 class="bold">OUR SKILLS</h5>
+                            <!-- skills / Add width out of 100% which will show the percentage of your skills -->
+                            <div class="skill-box">
+                                <div class="skill" style="width:92%">
+                                    Rigueur <span>92%</span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <div class="skill" style="width:86%">
+                                    Sens de la m&eacute;thode <span>86%</span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <div class="skill" style="width:78%">
+                                    Organisation <span>78%</span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <div class="skill" style="width:96%">
+                                    R&eacute;actif <span>96%</span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <div class="skill" style="width:94%">
+                                   Travail en &eacute;quipe <span>94%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end skills -->
+                    </section>
+                    <!-- begin team section -->
+                    <!-- team heading -->
+                    <section class="row heading center bigtoppadding">
+                        <h4>Profil ayant m&ecirc;me m&eacute;tier</h4>
+                        <h5 class="eight columns centered">Profil Informatique.</h5>
+                    </section>
+                    <!-- team row / add team info -->
+                    <section class="row bigtoppadding">
+                        <!-- add class 'team' to each of the team member column -->
+                        <div class="four columns team">
+                            <!-- team image -->
+                            <div class="border-img">
+                                <img src="preview/t2.jpg" alt="person">
+                            </div>
+                            <!-- member info and social media icons -->
+                            <div class="member-info">
+                                <h5>Meyem Farouq</h5>
+                                <h6 class="blue-text italic">Etudiante</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                </p>
+                                <a href="default.htm" title="Facebook"><i class="icon-facebook"></i></a>
+                                <a href="default.htm" title="Twitter"><i class="icon-twitter"></i></a>
+                                <a href="default.htm" title="Google +"><i class="icon-google-plus"></i></a>
+                            </div>
+                        </div>
+                        <!-- add class 'team' to each of the team member column -->
+                        <div class="four columns team">
+                            <!-- team image -->
+                            <div class="border-img">
+                                <img src="preview/t3.jpg" alt="person">
+                            </div>
+                            <!-- member info and social media icons -->
+                            <div class="member-info">
+                                <h5>Anis Nezhari</h5>
+                                <h6 class="blue-text italic">Ingénineur à LightON</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                </p>
+                                <a href="default.htm" title="Facebook"><i class="icon-facebook"></i></a>
+                                <a href="default.htm" title="Twitter"><i class="icon-twitter"></i></a>
+                                <a href="default.htm" title="Google +"><i class="icon-google-plus"></i></a>
+                            </div>
+                        </div>
+                        <!-- add class 'team' to each of the team member column -->
+                        <div class="four columns team">
+                            <!-- team image -->
+                            <div class="border-img">
+                                <img src="preview/t4.jpg" alt="person">
+                            </div>
+                            <!-- member info and social media icons -->
+                            <div class="member-info">
+                                <h5>Soukaina Mjahed</h5>
+                                <h6 class="blue-text italic">Etudiante</h6>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                </p>
+                                <a href="default.htm" title="Facebook"><i class="icon-facebook"></i></a>
+                                <a href="default.htm" title="Twitter"><i class="icon-twitter"></i></a>
+                                <a href="default.htm" title="Google +"><i class="icon-google-plus"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- end team -->
+                <!-- client parallax image section 2 -->
+                <section id="services">
+                <div class="image-2" data-stellar-background-ratio="0.5">
+                    <div class="black-tint">
+                        <!-- client section -->
+                        <section class="row heading center">
+                            <h3>Changement de carri&egrave;re</h3>
+                            <h5 class="ten columns centered">Vous avez envie de changer de m&eacute;tier et d&eacute;couvrer un nouveau monde ? Vous voulez changer de casquette ?</h5>
+                        </section>
+                        <!-- client logo row -->
+                        <section class="row">
+                            <div class="eleven columns centered">
+                                <div class="two columns">
+                                    <img src="preview/logo2.png" alt="client" class="client">
+                                </div>
+                                <div class="two columns">
+                                    <img src="preview/logo1.png" alt="client" class="client">
+                                </div>
+                                <div class="two columns">
+                                    <img src="preview/logo3.png" alt="client" class="client">
+                                </div>
+                                <div class="two columns">
+                                    <img src="preview/logo5.png" alt="client" class="client">
+                                </div>
+                                <div class="two columns">
+                                    <img src="preview/logo4.png" alt="client" class="client">
+                                </div>
+                                <div class="two columns">
+                                    <img src="preview/logo6.png" alt="client" class="client">
+                                </div>
+                            </div>
+                            <!-- call to action button -->
+                            <div class="four columns centered center">
+                                <div class="ten columns centered primary large btn">
+                                    <a href="../indexi.html">CHANGER MA CARRI&Egrave;RE</a>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- end  client/image parallax div -->
+                </section>
+          
+            <!-- begin footer -->
+            <footer>
+                 <!-- copyright -->
+                <div class="white">
+                    <section class="row center">
+                        <p class="grey-text">
+                            © Wijhaty 2014. ENSA Marrakech, InnovIT2014.
+                        </p>
+                    </section>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+        <!-- 
+        * end main container
+        * content has ended with closing div
+        -->
+        <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/libs/gumby.min.js"></script>
+        <!-- our scripts -->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/ajax.js"></script>
+        <!-- Preloader script-->
+        <script type="text/javascript">
+            //<![CDATA[
+            $(window).load(function() { // makes sure the whole site is loaded
+                $("#status").fadeOut(); // will first fade out the loading animation
+                $("#preloader").delay(350).fadeOut("slow"); // will fade out the grey DIV that covers the website.      
+            })
+            //]]>
+        </script>
+        <!-- background slideshow -->
+        <script src="js/supersized.js"></script>
+        <script src="js/slideshow.js"></script>
+        <!-- Change UA-XXXXX-X to be your site's ID -->
+        <!--<script>
+            window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+            Modernizr.load({
+              load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+            });
+          </script>-->
+
+
+
+
+
+        <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+               chromium.org/developers/how-tos/chrome-frame-getting-started -->
+        <!--[if lt IE 7 ]>
+            <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+            <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+          <![endif]-->
+    </body>
+</html>
